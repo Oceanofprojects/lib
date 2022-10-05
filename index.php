@@ -9,3 +9,8 @@ function arg($x){
 }
 
 ?>
+<html>
+	<body>
+		<h1>asas</h1>
+	</body>
+</html>
