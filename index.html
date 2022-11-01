@@ -10,14 +10,13 @@
 	<h1 id="dis"></h1>
 </body>
 <script type="text/javascript">
-var n='MANIMARAN';
 	var xr = new XMLHttpRequest();
-	url='patient.php?api_key=9050';
-	xr.open('POST',url,false);
-	xr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	url='https://projectz.infinityfreeapp.com/Games/TicTacToe/lib.php?key=get_data&r_id=12624';
+	//xr.open('POST',url,false);
+	//xr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 	//xr.send("api_key=add&data={name:mani,age:20}");
-	// xr.open('GET',url,false);
-	 xr.send();
+	xr.open('GET',url,false);
+	xr.send();
 	res=xr.response;
 document.getElementById('dis').value=res;
 </script>
