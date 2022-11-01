@@ -11,12 +11,12 @@
 </body>
 <script type="text/javascript">
 	var xr = new XMLHttpRequest();
-	url='https://projectz.infinityfreeapp.com/Games/TicTacToe/lib.php?key=get_data&r_id=12624';
+	url='https://projectz.infinityfreeapp.com/Games/TicTacToe/lib.php';
 	xr.open('POST',url,false);
 	xr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-	//xr.send("api_key=add&data={name:mani,age:20}");
+	xr.send("key=get_data&r_id=12624");
 	//xr.open('GET',url,false);
-	xr.send();
+//	xr.send();
 	res=xr.response;
 document.getElementById('dis').value=res;
 </script>
