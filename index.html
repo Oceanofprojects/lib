@@ -7,18 +7,30 @@
 </head>
 <body>
 	<input type="text" name="" id="dis">
+	<button onclick="go()">start</button>
 	<h1 id="dis"></h1>
 </body>
 <script type="text/javascript">
-	var xr = new XMLHttpRequest();
-	url='https://projectz.infinityfreeapp.com/Games/TicTacToe/lib.php';
-	xr.open('POST',url,false);
-	xr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-	xr.send("key=get_data&r_id=12624");
-	//xr.open('GET',url,false);
-//	xr.send();
-	res=xr.response;
-document.getElementById('dis').value=res;
+// 	var xr = new XMLHttpRequest();
+// 	url='https://projectz.infinityfreeapp.com/Games/TicTacToe/lib.php';
+// 	xr.open('POST',url,false);
+// 	xr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+// 	xr.send("key=get_data&r_id=12624");
+// 	//xr.open('GET',url,false);
+// //	xr.send();
+// 	res=xr.response;
+	function go(){
+		alert()
+	 $.ajax({
+               url:"https://mycelial-fabricatio.000webhostapp.com/index.php",
+              type:"post",
+               data:"d=mani",
+               success:function(d){
+                 alert(d);
+              	 console.log('DATA : '+d)
+               }});
+	}
+document.getElementById('dis').value=d;
 </script>
 
 </html>
